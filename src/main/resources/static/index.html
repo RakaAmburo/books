@@ -1,8 +1,30 @@
+<!DOCTYPE html>
 <html>
 <head>
-    <title>Home</title>
+    <script src="/jquery.js"></script>
+    <script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $.post("localhost:8080/ideas",
+    {
+    title: "titl2e",
+    id: "3c6ea2bd-09f7-48b5-931d-ee6cd7b93c10",
+    description: "description2",
+    content: "content2",
+    tags: [
+    "oneTag2"
+    ]
+    },
+    function(data,status){
+      alert("Data: " + data + "\nStatus: " + status);
+    });
+  });
+});
+</script>
 </head>
 <body>
-<h1>Hello world!</h1>
+
+<button>Send an HTTP POST request to a page and get the result back</button>
+
 </body>
 </html>
