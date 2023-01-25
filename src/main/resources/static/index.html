@@ -2,25 +2,7 @@
 <html>
 <head>
     <script src="/jquery.js"></script>
-    <script>
-$(document).ready(function(){
-  $("button").click(function(){
-    $.post("localhost:8080/ideas",
-    {
-    title: "titl2e",
-    id: "3c6ea2bd-09f7-48b5-931d-ee6cd7b93c10",
-    description: "description2",
-    content: "content2",
-    tags: [
-    "oneTag2"
-    ]
-    },
-    function(data,status){
-      alert("Data: " + data + "\nStatus: " + status);
-    });
-  });
-});
-</script>
+    <script src="/index.js"></script>
 </head>
 <body>
 
