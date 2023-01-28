@@ -3,10 +3,29 @@
 <head>
     <script src="/jquery.js"></script>
     <script src="/index.js"></script>
+    <link rel="stylesheet" href="/richtexteditor/rte_theme_default.css" />
+    <script type="text/javascript" src="/richtexteditor/rte.js"></script>
+    <script type="text/javascript" src='/richtexteditor/plugins/all_plugins.js'></script>
 </head>
 <body>
 
-<button>Send an HTTP POST request to a page and get the result back</button>
+<form>
+    <label for="title">First name:</label><br>
+    <input type="text" id="title" name="fname"><br>
+    <label for="description">Last name:</label><br>
+    <input type="text" id="description" name="lname">
+    <div id="div_editor1">
+
+    </div>
+</form>
+
+<script>
+	var editor1cfg = {}
+	editor1cfg.toolbar = "basic";
+	var editor1 = new RichTextEditor("#div_editor1");
+</script>
+
+<button>Save</button>
 
 </body>
 </html>
