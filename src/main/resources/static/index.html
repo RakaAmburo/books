@@ -1,31 +1,43 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <script src="/jquery.js"></script>
     <script src="/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/ag-grid-community/dist/ag-grid-community.min.js"></script>
     <link rel="stylesheet" href="/richtexteditor/rte_theme_default.css" />
     <script type="text/javascript" src="/richtexteditor/rte.js"></script>
     <script type="text/javascript" src='/richtexteditor/plugins/all_plugins.js'></script>
 </head>
+
 <body>
 
-<form>
-    <label for="title">First name:</label><br>
-    <input type="text" id="title" name="fname"><br>
-    <label for="description">Last name:</label><br>
-    <input type="text" id="description" name="lname">
-    <div id="div_editor1">
+    <form>
+        <label for="title">First name:</label><br>
+        <input type="text" id="rootHref" name="href">
+        <input type="text" id="method" name="method" value="POST">
+        <input type="text" id="href" name="href">
+        <input type="text" id="title" name="fname"><br>
+        <label for="description">Last name:</label><br>
+        <input type="text" id="description" name="lname">
+        <div id="div_editor1">
 
-    </div>
-</form>
+        </div>
+    </form>
 
-<script>
-	var editor1cfg = {}
-	editor1cfg.toolbar = "basic";
-	var editor1 = new RichTextEditor("#div_editor1");
-</script>
 
-<button>Save</button>
+    <script>
+        var editor1cfg = {}
+        editor1cfg.toolbar = "basic";
+        var editor1 = new RichTextEditor("#div_editor1");
+    </script>
+
+    <button>Save</button>
+
+
+    <div id="myGrid" style="height: 200px; width:800px;" class="ag-theme-alpine"></div>
+
 
 </body>
+
 </html>

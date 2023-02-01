@@ -8,5 +8,5 @@ import org.springframework.stereotype.Repository;
 import java.util.UUID;
 
 @RepositoryRestResource(collectionResourceRel = "ideas", path = "ideas")
-public interface IdeaRepository extends MongoRepository<Idea, UUID> {
+public interface IdeaRepository extends MongoRepository<Idea, String> {
 }

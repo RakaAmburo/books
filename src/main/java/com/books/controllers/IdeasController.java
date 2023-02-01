@@ -26,7 +26,7 @@ public class IdeasController {
     @GetMapping("")
     public ResponseEntity<Void> create(){
 
-        ideaRepository.save(Idea.builder().id(UUID.randomUUID())
+        ideaRepository.save(Idea.builder().id("")
                 .content("content")
                 .description("description")
                 .tags(List.of("oneTag"))
