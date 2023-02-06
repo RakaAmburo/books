@@ -65,7 +65,7 @@ const listingSuccess = (response) => {
 
 const columnDefs = [
   { field: "title" },
-  { field: "description" }
+  { field: "description", width: 350, wrapText: true }
 ];
 // let the grid know which columns and what data to use
 const gridOptions = {
