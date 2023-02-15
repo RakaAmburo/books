@@ -1,0 +1,9 @@
+faltanes books/ideas
+
+-agregar libro y capitulo a  la base (como grupos en lista)
+-ordenar fields y separar y estructurar en talbas
+-impementar el sabe automatico (detectar cambio pasados unos seguindos o cada tantas letras o cada 5' si hay cambioas guardar)
+-implementar el backup con un boton?¿ agregar voice?
+-implement a service of synonyms antonimos http://words.bighugelabs.com/api.php
+-implementar buscador en l alista por diferentes items?
+-flechas para historial de trabajo (y ordenlogico) otras formas de navegar por lo trabajodo
